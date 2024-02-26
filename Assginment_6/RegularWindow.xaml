@@ -1,0 +1,33 @@
+﻿<Window x:Class="Assginment_6.RegularWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Assginment_6"
+        mc:Ignorable="d"
+        Title="RegularWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel VerticalAlignment="center" Width="400">
+            <TextBlock Text="Update Information" FontSize="20" VerticalAlignment="Center" TextAlignment="Center"/>
+            <Label Content="Username:"/>
+            <TextBox Name="txtUsername"/>
+            <Label Content="First Name:"/>
+            <TextBox Name="txtFirstName"/>
+            <Label Content="Last Name:"/>
+            <TextBox Name="txtLastName"/>
+            <Label Content="Telephone:"/>
+            <TextBox Name="txtTelephone"/>
+            <Button Content="Update Information" Click="BtnUpdateInfo_Click" Margin="0,10,0,0"/>
+            <StackPanel VerticalAlignment="center" Width="400">
+                <Label Content="Current Password:"/>
+                <PasswordBox Name="txtCurrentPassword"/>
+                <Label Content="New Password:"/>
+                <PasswordBox Name="txtNewPassword"/>
+                <Label Content="Confirm Password:"/>
+                <PasswordBox Name="txtConfirmPassword"/>
+                <Button Content="Change Password" Click="BtnChangePass_Click" Margin="0,10,0,0"/>
+            </StackPanel>
+        </StackPanel>
+        
+    </Grid>
+</Window>

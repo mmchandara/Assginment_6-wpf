@@ -1,0 +1,15 @@
+CREATE DATABASE Restaurants;
+Use Restaurants;
+CREATE TABLE Users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50),
+    password TEXT,
+    first_name DECIMAL(10,2),
+    last_name VARCHAR(50),
+    telephone int,
+    role VARCHAR(50),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    modified_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+    );
+    INSERT INTO Users (username, password, first_name, last_name, telephone, role) VALUES ('johndoe1', 'john_password', '2.5', 'User', '1254321421', 'admin');
+    INSERT INTO Users (username, password, first_name, last_name, telephone, role) VALUES ('mary1', 'mary_password', '5.2', 'User', '12543214212', 'regular');
